@@ -3,8 +3,9 @@ var area = document.querySelector(".area");
 var currency1 = "USD";
 var currency2 = "GBP";
 var currency3 = "EUR";
+var url = "https://api.coindesk.com/v1/bpi/currentprice.json"
 
-fetch("./local.json")
+fetch(url)
   .then((res) => res.json())
   .then((data) => {
     btn.addEventListener("click", function () {
